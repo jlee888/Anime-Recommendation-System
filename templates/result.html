@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="result-title">Result for "{{ anime_title }}"</div>
+
+    <!-- For loop logic of jinja template -->
+    <div class="result">
+        {% for anime in recommend_list %}
+            <div class="cell">
+                <!-- <div>{{ input }}</div> -->
+                <div class="cover">
+                    <img src="{{ anime['image'] }}" alt="" style="width: 150px">
+                </div>
+                <div class="name">{{ anime['name'] }}</div>
+                <!-- <div class="year">y  e a  r</div> -->
+                <!-- <div class="genre">genre</div> -->
+                <div class="rating">Rating: {{ anime['rating'] }}</div>
+            </div>
+        {% endfor %}
+    </div>
+      
+
+    
+</div>
+{% endblock%}
+
+
+
+
+
+

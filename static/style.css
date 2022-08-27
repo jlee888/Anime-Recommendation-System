@@ -1,0 +1,97 @@
+body {
+    background-image: url("/static/img/a.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 110, 255);
+}
+
+.logo {
+    flex: 8;
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.logo-text {
+    color: white;
+    font-size: 36px;
+    flex: 8;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
+.logo-text:hover {
+    color: white;
+}
+
+.github-logo {
+    flex: 1;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* font-family: 'Arvo', serif; */
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    color: white;
+}
+
+.input {
+    width: 430px;
+    /* background-color: aqua; */
+    padding: 3px 0px 3px 10px;
+    /* border: 3px solid  rgb(0, 110, 255); */
+    border: 1px solid  rgb(0, 110, 255);
+    border-radius: 20px;
+}
+
+.submit {
+    background-color: transparent;
+    border: none;
+}
+.submit>img {
+    width: 35px;
+}
+
+/* for result pages */
+.result-title {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.cell {
+    background-color: rgba(0, 255, 255, 0.7);
+    margin: 5px;
+    padding: 5px;
+    flex: none;
+    width: 20%;
+    text-align: center;
+}
+
+.cell:hover {
+    background-color: rgba(0, 191, 255, 0.7);
+    width: 21%;
+    transition: 0.5s;
+}

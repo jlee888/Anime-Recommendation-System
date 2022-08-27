@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="search">
+  <div>
+      <div class="title">
+          <h1>Enter an anime you like</h1>
+      </div>
+      <div>
+          <!-- Get user input for the anime_title -->
+          <form method="POST" action="/">
+              <input class="input" type="text" name="anime_title" placeholder="Search ..." required>
+              <!-- <input class="submit" type="submit" value="submit"> -->
+
+              <button class="submit" type="submit">
+                <img src="/static/img/search-icon.png" />
+              </button>
+          </form>
+          
+          <!-- <button>
+              <img class="button" src="img/search-icon.png" alt=""">
+          </button> -->
+
+      </div>
+  </div>
+</div>
+{% endblock%}
