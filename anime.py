@@ -42,7 +42,7 @@ def setup():
     return genres_id, anime_id_at, ultimate_binary_list
 
 # ultimate_binary_list
-def get_recommendation(user_input: str, genres_id: dict, anime_id_at: list, ultimate_binary_list: list) -> list[str]:
+def get_recommendation(user_input, genres_id, anime_id_at, ultimate_binary_list):
     anilist = Anilist()
     try:
         usr_anime = anilist.get_anime(user_input)["genres"]
